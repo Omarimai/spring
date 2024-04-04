@@ -69,4 +69,9 @@ public class ClientServiceImpl implements ClientService{
     public List<Client> searchByName(String str) {
         return clientRepo.findClientsByNomContaining(str);
     }
+    
+    @Override
+    public List<Client> findAllClients() {
+        return clientRepo.findAll();
+    }
 }

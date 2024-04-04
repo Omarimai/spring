@@ -33,4 +33,8 @@ public class ClientController {
     public List<Client> rechercheParNom(@PathVariable String str){
         return clientService.searchByName(str);
     }
+    @GetMapping("/findAll")
+    public List<Client> findAllClients() {
+        return clientService.findAllClients();
+    }
 }

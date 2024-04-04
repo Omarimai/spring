@@ -13,4 +13,6 @@ public interface ClientService {
     void deletClient(Long id);
 
     List<Client>searchByName(String str);
+
+    List<Client> findAllClients();
 }
